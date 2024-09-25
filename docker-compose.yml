@@ -1,0 +1,26 @@
+# Your Solution
+version: '3'
+services:
+  book_catalog:
+    image: book-catalog:1
+    build:
+      context: ./book_catalog
+      dockerfile: Dockerfile
+    container_name: book-catalog
+    ports:
+    - "4001:80"
+    environment:
+    - PORT=80
+    restart: "no"
+
+  inventory_management:
+    image: inventory-management:1
+    build:
+      context: ./inventory_management
+      dockerfile: Dockerfile
+    container_name: inventory-management
+    ports:
+    - "4002:80"
+    environment:
+    - PORT=80
+    restart: "no"
