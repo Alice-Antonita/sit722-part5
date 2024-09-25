@@ -1,8 +1,8 @@
-FROM python:3.9-slim
+FROM python:3.12
 
-WORKDIR /book_catalog
+WORKDIR /usr/src/app
 
-COPY ./* .
+COPY ./app/. ./
 
 ENV DATABASE_URL=postgresql://sit722week09_user:PY7xBsb6KkvCQA8P3oUz1W8dz97vZ3NB@dpg-crnjov68ii6s73eso5m0-a.oregon-postgres.render.com/sit722week09
 
