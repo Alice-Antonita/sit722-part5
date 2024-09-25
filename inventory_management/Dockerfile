@@ -1,6 +1,6 @@
 FROM python:3.12
 
-WORKDIR /book_catalog/app
+WORKDIR /book_catalog
 
 COPY ./* .
 
