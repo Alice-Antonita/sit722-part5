@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-WORKDIR /inventory_management
+WORKDIR /inventory_management/app
 
 COPY ./* .
 
